@@ -1,0 +1,82 @@
+:root {
+  --theme-color: #a144fe; /* global scope */
+  --theme-color-dark: #a128da; /* global scope */
+  --sub-theme-color:#2f2a33;
+  --white-color: #fff;
+  --light-gray: #f1f1f1;
+}
+
+
+.michroma {
+    font-family: "Michroma", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Michroma", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    color: var(--sub-theme-color);
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+.theme-text {
+    color: var(--theme-color);
+}
+
+.container {
+    max-width: 1200px !important;
+    margin: 0 auto;
+}
+
+@media(min-width: 1600px) {
+    .container {
+         max-width:1400px !important;
+    }
+}
+.verticle-text {
+    position: relative;
+    font-size: 6px;
+    transform: rotate(-90deg); 
+    width: 28px;
+    display: inline-block;
+}
+
+.btn-primary {
+    background-color: var(--theme-color);
+    box-shadow: var(--theme-color) 0px 3px 7px;
+    background-color: var(--theme-color);
+    border: 1px solid var(--theme-color)t;
+    color: rgb(255, 255, 255);
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .btn-primary.focus {
+    background-color: var(--theme-color-dark);
+    border-color: var(--theme-color-dark);
+    color: var(--white-color);
+}
+
+.main-bg {
+    background-image: url(../images/main-bg.png);
+    background-repeat: no-repeat;
+}
+
+.logo h1 {
+    font-size: 2rem !important;
+}
+
+
+.edge-banner {
+    /* background-color: var(--light-gray); */
+}
